@@ -15,18 +15,33 @@ I am only using using two of them (1 & 3) in this project as it will be used for
 ### Structure
 The project structured as following:
 
-- Gathering Data
-    - twitter-archive-enhanced.csv
-    - tweet_json.txt
-- Assesing Data
-    - Visual assessment
-    - Programmatic assessment
-- Cleaning Data
-    - Quality Issues
-    - Tidiness Issues
-- Storing Data
-- Analysing Data
+- Business Understanding
+- Data Understanding
+    - Gathering Data
+        - twitter-archive-enhanced.csv
+        - tweet_json.txt
+    - Assesing Data
+        - Visual assessment
+        - Programmatic assessment
+- Prepare Data
+    - Missing values:
+        Columns those have high proportion of missing values are removed.
+    - Categorical columns:
+        Code the categorical variables values into new columns with 1 and 0.
+
+- Modeling and Evaluate Data
     - Q1: What is the top rating?
     - Q2: Which correlate well to which column? (Rating, retweet, favorite)
     - Q3: What is the most favourited dog stage?
     - Q4: Can we predict number of favorites received?
+
+### Files in the project
+1. weratedogs.ipynb: The main wrangling and analysis code. 
+2. twitter-archive-enhanced.csv: Data sourced from Udacity Data Analyst Nanodegree, contains ~2000 tweets with details of the tweets.
+3. tweet_json.txt: Data sourced from Twitter API, contains count of favorites and count of replies on each post.
+4. twitter_archive_master.csv: Cleaned and combined dataset from the previous two.
+
+### Findings
+Details on the findings can be found in this [blog post](https://medium.com/@ritotombe/these-tricks-will-make-every-post-on-weratedogs-more-popular-167ff19b0e0b)
+
+
